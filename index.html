@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>REGISTRATION FORM</title>
+    <style>form {
+      display: flex;
+      flex-direction: column;
+      max-width: 400px;
+      margin: 0 auto;
+  }
+  
+  label {
+      margin-top: 12px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="checkbox"]{
+      margin-bottom: 20px;
+      padding: 8px;
+      border: 1px solid rgb(10, 0, 0);
+      border-radius: 5px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+      width: 100%;
+      max-width: 400px;
+  }
+  
+  button[type="submit"] {
+      background-color: #3f17ac;
+      color: rgb(48, 216, 39);
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+      background-color: #d1d8db;
+  }
+  
+  table {
+      border-collapse: collapse;
+      margin-top: 30px;
+      width: 100%;
+  }
+  
+  table th,
+  table td {
+      border: 2px solid rgb(186, 162, 162);
+      padding: 7px;
+  }
+  
+  table th {
+      background-color: #ae9978bd;
+      text-align:center;
+  }
+  
+  
+  </style>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <h1 align="center">Registration Form </h1>
+    <form id="registration_form">
+      <label for="name" >Name:</label>
+      <input type="text" id="name" name="name" required placeholder="Enter your name"/>
+      <label for="email" >Email:</label>
+      <input type="email" id="email" name="email" required placeholder="Enter Valid email" />
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required placeholder="Enter Password" />
+      <label for="dob">Date of birth:</label>
+      <input type="date" id="dob" name="dob" required placeholder="Enter DOB"/>
+      <label for="terms">
+        <input type="checkbox" id="terms" name="terms" />
+        Accept terms and conditions:
+      </label>
+      <button type="submit">Submit</button>
+    </form>
+    <table id="user-table">
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Password</th>
+        <th>Dob</th>
+        <th>Accepted terms?</th>
+      </tr>
+    </table>
+    <script src="index.js"></script>
+  </body>
+</html>
